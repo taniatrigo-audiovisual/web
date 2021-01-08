@@ -2,13 +2,13 @@ import React from "react";
 
 export const Bio = (): JSX.Element => {
   return (
-    <>
-      <div className="flex flex-col md:flex-row w-full p-24 h-5/6 bg-pink-900" />
-      <div className="flex flex-col md:flex-row w-full p-12 bg-green">
-        <div className="text-lg text-white font-extrabold md:text-left pb-8 md:w-1/5 md:p-12 md:ml-8 sm:w-full sm:text-center sm:pb-8 sm:ml-0">
+    <div className="flex w-full flex-wrap h-screen">
+      <div className="flex flex-col md:flex-row w-full p-24 bg-pink-900 h-auto" />
+      <div className="flex flex-col items-center justify-around md:flex-row w-full py-12 bg-green px-10 h-auto">
+        <div className="text-lg text-white font-extrabold md:text-left pb-8 md:w-1/5 md:p-12 sm:w-full sm:text-center sm:pb-8 sm:ml-0">
           Bio
         </div>
-        <div className="text-lg h-auto text-white md:w-4/5 md:p-12 sm:w-full">
+        <div className="text-lg h-auto max-w-5xl text-white md:w-4/5 md:p-12 sm:w-full">
           <p>
             Soy{" "}
             <span className="font-extrabold">
@@ -24,7 +24,7 @@ export const Bio = (): JSX.Element => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row w-full p-24 h-5/6 bg-blue-500" />
-    </>
+      <div className="flex flex-col md:flex-row w-full p-24 bg-blue-500 h-auto" />
+    </div>
   );
 };

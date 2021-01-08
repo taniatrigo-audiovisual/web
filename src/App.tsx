@@ -22,10 +22,10 @@ function App() {
                   </span>
                 </h3>
               </div>
-              <div className="visible flex w-full pt-2 content-center justify-between text-white md:w-1/2 md:justify-end xs:invisible">
+              <div className="flex w-full pt-2 content-center justify-between text-white md:w-1/2 md:justify-end">
                 <ul className="list-reset flex justify-between flex-1 md:flex-none items-center">
                   <li className="mr-3">
-                    <Link to="/">Reel</Link>
+                    <Link to="/web/">Reel</Link>
                   </li>
                   <li className="mr-3 text-pink-600">|</li>
                   <li className="mr-3">
@@ -45,6 +45,9 @@ function App() {
             </Route>
             <Route path="/contacto">
               <Contact />
+            </Route>
+            <Route path="/web/">
+              <Video />
             </Route>
             <Route path="/">
               <Video />
